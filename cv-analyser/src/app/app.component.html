@@ -1,10 +1,7 @@
 <nav>
-<div>Home</div>
-<div>Student</div>
-<div>Recruiter</div>
-<div>About</div>
+<div routerLink="/">Home</div>
+<div routerLink="/student">Student</div>
+<div routerLink="/recruiter">Recruiter</div>
+<div routerLink="/about">About</div>
 </nav>
-<app-home></app-home>
-<app-student-analyser></app-student-analyser>
-<app-recruiter></app-recruiter>
-<app-about></app-about>
+<router-outlet></router-outlet>
