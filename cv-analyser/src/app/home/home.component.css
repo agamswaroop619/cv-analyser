@@ -1,0 +1,93 @@
+.home{
+    background-image: url('79e03d94-e69e-4463-833c-d0b7d16c45ac.jpg');
+    background-repeat: round;
+    height: 93vh;
+}
+.half-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.first-section {
+    flex: 1;
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    align-items: center;
+    justify-content: center;
+
+}
+.main-text{
+    color: white;
+    font-size: 7rem;
+    font-family: 'poppins';
+    user-select: none;
+    animation-name: enter;
+    animation-duration: 500ms;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-out;
+}
+.description{
+    color: white;
+    margin:none;    
+    margin: 0;
+    padding-right: 8rem;
+    user-select: none;
+    animation-name: enter-des;
+    animation-duration: 500ms;
+    animation-iteration-count: initial;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    position: relative;
+}
+
+.second-section {
+    flex: 1;
+    height: 93vh;
+    display: flex;
+    padding-right: 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.image{
+    display: flex;
+    justify-content: center;
+}
+.telescope{
+    width: 50%;
+    background-color: white;
+    border-radius: 100%;
+    animation-name: enter;
+    animation-duration: 500ms;
+    animation-delay: 50ms;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-out;
+    transition-property: scale;
+    transition-timing-function: ease-in-out;
+    scale: 1;
+    transition-duration: 250ms;
+    cursor: pointer;
+}
+.telescope:hover{
+    scale: 1.2;
+}
+
+@keyframes enter{
+    0%{
+        scale: 0.8;
+    }
+    70%{
+        scale: 1.05;
+    }
+    100%{
+        scale: 1;
+    }
+}
+@keyframes enter-des{
+    0%{
+        left: -70%;
+    }
+    100%{
+        left: 0;
+    }
+}
