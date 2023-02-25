@@ -1,0 +1,131 @@
+.half-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.first-section {
+    flex: 1;
+    background-color: whitesmoke;
+    height: 91vh;
+    display: flex;
+    padding-left: 2rem;
+    align-items: center;
+
+}
+
+.second-section {
+    flex: 1;
+    background-color: #808eda;
+    height: 91vh;
+    display: flex;
+    padding-right: 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.left-side {
+    font-size: 7rem;
+    font-family: 'poppins';
+    font-weight: 200;
+    cursor: default;
+    user-select: none;
+    animation-name: enter;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: initial;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: row;
+
+}
+.first-part{
+    flex: 1;
+    padding-left:2rem ;
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second-part{
+    flex: 1;
+    padding-right: 2rem;
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.giticon{
+    height: 200px;
+    border-radius: 100%;
+    filter: contrast(1.8);
+    animation-name: entericon2;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: initial;
+    z-index: 2;
+    transition-property: scale;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+.giticon:hover{
+    scale: 1.2;
+}
+.inicon{
+    height: 200px;
+    border-radius: 100%;
+    background-color: white;
+    padding: 15px;
+    animation-name: entericon;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: initial;
+    transition-property: scale;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+.inicon:hover{
+    scale: 1.2;
+}
+
+
+@keyframes enter {
+    0% {
+        position: relative;
+        left: -70%;
+    }
+
+    100% {
+        position: relative;
+        left: 0;
+    }
+}
+
+@keyframes entericon {
+    0% {
+        position: relative;
+        right: -300px;
+    }
+
+    100% {
+        position: relative;
+        right: 0;
+    }
+}
+@keyframes entericon2 {
+    0% {
+        position: relative;
+        right: -584px;
+    }
+
+    100% {
+        position: relative;
+        right: 0;
+    }
+}

@@ -17,8 +17,13 @@
     border-radius: 1.6rem;
     transition-timing-function: ease-in-out;
     transition-duration: 200ms;
+    user-select: none;
+    border-width: 3px;
+    border-color: #3F56D3;
+    border-style: solid;
+
 }
 .navitem:hover{
-    background-color: #808eda;
     color: white;
+    border-color: white;
 }
