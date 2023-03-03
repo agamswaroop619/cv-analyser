@@ -1,0 +1,13 @@
+.half-section{
+    display: flex;
+    flex-direction: row;
+    height: 93vh;
+}
+.first-section{
+    flex: 1;
+    background-color: #4a65f9;
+}
+.second-section{
+    flex: 1;
+    background-color: whitesmoke;
+}

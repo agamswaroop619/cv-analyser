@@ -10,9 +10,18 @@
     display: flex;
     padding-left: 2rem;
     align-items: center;
-
+    flex-flow: column;
+    justify-content: center;
 }
-
+.edited{
+    padding-right: 3rem;
+    text-align: justify;
+    animation-name: enter;
+    animation-duration: 300ms;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: initial;
+}
 .second-section {
     flex: 1;
     background-color: #808eda;
