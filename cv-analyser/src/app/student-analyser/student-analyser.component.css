@@ -6,8 +6,18 @@
 .first-section{
     flex: 1;
     background-color: #4a65f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .second-section{
     flex: 1;
     background-color: whitesmoke;
 }
+
+.signup{
+    background-color: whitesmoke;
+    width: 40%;
+    padding: 5%;
+    border-radius: 50px;
+}   
